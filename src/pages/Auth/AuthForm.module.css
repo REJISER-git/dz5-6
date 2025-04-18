@@ -1,0 +1,20 @@
+.formContainer {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.formTitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.switchLink {
+    text-align: center;
+    margin-top: 20px;
+}

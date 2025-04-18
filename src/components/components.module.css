@@ -1,0 +1,53 @@
+.card {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  position: relative;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cardIcons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 8px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.iconWrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.iconWrapper:hover {
+  transform: scale(1.15);
+}
+
+.card .ant-card-meta-title h3 {
+  margin-bottom: 4px !important;
+  font-size: 16px;
+}
+
+.card .ant-card-meta-description p {
+  margin-bottom: 4px !important;
+  font-size: 14px;
+}
+
+.card .ant-card-cover > img {
+  display: block;
+  width: 100%;
+}

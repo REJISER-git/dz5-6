@@ -1,0 +1,42 @@
+.profileContainer {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.tabPaneContent {
+    padding: 24px;
+}
+
+.formSection {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.avatarSection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatarUploader > .ant-upload {
+    width: 128px;
+    height: 128px;
+}
+
+.favoritesList .ant-list-item-meta-title a {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.favoritesList .ant-list-item-meta-title a:hover {
+    color: #1890ff;
+}
+
+.favoritesList .ant-list-item {
+    align-items: center;
+}
+
+.favoritePrice {
+    font-weight: 500;
+    min-width: 80px;
+    text-align: right;
+    margin-right: 20px;
+}

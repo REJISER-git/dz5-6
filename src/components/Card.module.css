@@ -1,0 +1,118 @@
+.card {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.image {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.content {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    min-height: 54px;
+}
+
+.brand {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buttonAnimation {
+    animation: buttonColorChange 0.3s ease;
+}
+
+@keyframes buttonColorChange {
+    0% {
+        background-color: #1890ff;
+        color: white;
+    }
+    50% {
+        background-color: #52c41a;
+        color: white;
+    }
+    100% {
+        background-color: #1890ff;
+        color: white;
+    }
+}
+
+.favoriteButtonAnimation {
+    animation: favoriteButtonColorChange 0.3s ease;
+}
+
+@keyframes favoriteButtonColorChange {
+    0% {
+        color: rgba(0, 0, 0, 0.88);
+    }
+    50% {
+        color: #eb2f96;
+    }
+    100% {
+        color: rgba(0, 0, 0, 0.88);
+    }
+}

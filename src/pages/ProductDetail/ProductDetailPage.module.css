@@ -1,0 +1,125 @@
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.backButton {
+    margin-bottom: 20px;
+}
+
+.imageCol {
+    text-align: center;
+}
+
+.mainImage {
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 16px;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.thumbnailList {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumbnailImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.thumbnailImage:hover {
+    border-color: #1890ff;
+}
+
+.detailsCol {
+
+}
+
+.brand {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+
+.title {
+    margin-bottom: 12px;
+}
+
+.ratingStock {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1890ff;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.buttonAnimation {
+    animation: buttonColorChange 0.3s ease;
+}
+@keyframes buttonColorChange {
+    0%, 100% { background-color: #1890ff; color: white; }
+    50% { background-color: #52c41a; color: white; }
+}
+
+.favoriteButtonAnimation {
+    animation: favoriteButtonColorChange 0.3s ease;
+}
+@keyframes favoriteButtonColorChange {
+    0%, 100% { color: rgba(0, 0, 0, 0.88); }
+    50% { color: #eb2f96; }
+}
+
+.actionButtons .ant-btn-dangerous:not(:disabled) {
+    color: #ff4d4f;
+    border-color: #ff4d4f;
+}
+.actionButtons .ant-btn-dangerous:not(:disabled):hover {
+    color: #ff7875;
+    border-color: #ff7875;
+}
+
+.reviewForm {
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.reviewItem {
+    margin-bottom: 16px;
+}
